@@ -37,6 +37,12 @@ li {
     font-size: 1.25rem;
 }
 
+@media only screen and (max-width: 630px) {
+    
+    h2{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
 
 /*header*/
 
@@ -118,7 +124,7 @@ li {
 .missionlogo img {
     height: 20rem;
     width: 20rem;
-    margin-left: 30%;
+    margin: 0 auto;
   }
 
 .missionlogo h2 {
@@ -128,7 +134,7 @@ li {
 @media only screen and (min-width: 891px) and (max-width: 1246px) {
     
     .missionlogo img {
-        margin-left: 24%;
+        margin: 0 auto;
       }
     
 }
@@ -136,7 +142,7 @@ li {
 @media only screen and (min-width: 631px) and (max-width: 890px) {
     
     .missionlogo img {
-        margin-left: 10%;
+        margin: 0 auto;
     }
 
     .missionlogo {
@@ -148,7 +154,7 @@ li {
 @media only screen and (max-width: 630px) {
     
     .missionlogo img {
-        margin-left: 10%;
+        margin: 0 auto;
     }
 
     .missionlogo {
