@@ -1,0 +1,457 @@
+@font-face {
+    font-family: "Ancukaseyo";
+    src: url("../fonts/Ancukaseyo/Ancukaseyo.otf") format("oft"),
+    url("../fonts/Ancukaseyo/Ancukaseyo.ttf") format("ttf"),
+    url("../fonts/Ancukaseyo/Ancukaseyo.woff") format("woff"),
+    url("../fonts/Ancukaseyo/Ancukaseyo.woff2") format("woff2");
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h2, h5, p {
+    margin: 0px;
+    text-align: center;
+}
+
+h2 {
+    font-family: "Alegreya Sans SC", Arial, Helvetica, sans-serif;
+    font-size: 3.125rem;
+    padding-bottom: 3.5rem;
+}
+
+h5 {
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    font-size: 1.313rem;
+}
+
+p {
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+}
+
+li {
+    font-family: "Nunito", Arial, Helvetica, sans-serif;
+    font-size: 1.25rem;
+}
+
+
+/*header*/
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 12;
+    margin-top: 0px;
+    top: 0px;
+    left:0px;
+}
+
+.headerlogo img {
+    display: flex;
+    width: 8rem;
+    height: 8rem;
+    align-items: center;
+    margin-left: 2rem;
+
+}
+
+.navbar {
+    display: flex;
+}
+
+.navlinks {
+    display: flex;
+    margin-right: 1rem;
+}
+
+.navitems {
+    margin: 0px 1rem 1rem 1rem;
+    list-style: none;
+}
+
+.navitems a {
+    color: black;
+    text-decoration: none;
+}
+
+.navitems a:hover{
+    color: #e57738;
+}
+
+
+
+/*misison*/
+
+#mission {
+    height: 960px;
+}
+
+#mission .background {
+    width: 100%;
+    height: 60rem;
+    object-fit: cover;
+    filter: brightness(.4);
+    overflow: hidden
+  }
+  
+  
+.missionlogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    Padding-top: 6rem;
+  }
+
+.missionlogo img {
+    height: 20rem;
+    width: 20rem;
+    margin-left: 30%;
+  }
+
+.missionlogo h2 {
+    margin-top: 3rem;
+}
+
+@media only screen and (min-width: 891px) and (max-width: 1246px) {
+    
+    .missionlogo img {
+        margin-left: 24%;
+      }
+    
+}
+
+@media only screen and (min-width: 631px) and (max-width: 890px) {
+    
+    .missionlogo img {
+        margin-left: 10%;
+    }
+
+    .missionlogo {
+        Padding-top: 11rem;
+    }
+    
+}
+
+@media only screen and (max-width: 630px) {
+    
+    .missionlogo img {
+        margin-left: 10%;
+    }
+
+    .missionlogo {
+        Padding-top: 11rem;
+    }
+    
+}
+
+/*services*/
+
+#services {
+    height: 65rem;
+    padding-top: 5rem;
+
+
+}
+
+.servicebase {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    justify-items: center;
+    margin: 0 6% 0 6%;
+}
+
+.servicecontainer {
+    border-radius: 5px;
+    height: 100%;
+}
+
+
+
+.servicecontainer h2, p {
+    margin: 2rem;
+}
+
+.servicecontainer a{
+    color: black;
+    text-decoration: none;
+}
+
+.servicecontainer a:hover{
+    color: #e57738;
+}
+
+.serviceimg {
+    display: flex;
+    height: 65%;
+}
+
+.serviceimg img {
+    width: 100%;
+    margin: 20px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.pool h2 {
+    padding-bottom: 0px
+}
+
+@media only screen and (min-width: 891px) and (max-width: 1400px) {
+    
+    .pool h2 {
+        padding-bottom: 3.5rem;
+    }
+    
+}
+
+@media only screen and (min-width: 891px) and (max-width: 1246px) {
+
+    .serviceimg {
+        height: 40%;
+    }
+
+}
+
+
+@media only screen and (max-width: 1085px) {
+
+    #services {
+        height: 130rem;
+    }
+
+    .servicebase {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: none;
+        gap: 90px;
+    }
+
+    .servicecontainer {
+        height: 35rem;
+    }
+
+    .servicecontainer h2 {
+        padding-bottom: 0px;
+    }
+
+}
+
+
+/*Locations*/
+
+#location {
+    height:60rem;
+    padding-bottom: 5rem;
+    padding-top: 3rem;
+    background-color: #e9b89b;
+    box-shadow: 0px 0px 20px 4px hsla(22, 77%, 56%, 0.4) inset;
+    position: relative;
+    z-index: 10;
+}
+
+#location h2 {
+    color: black;
+}
+
+.location-base {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 70px;
+    justify-items: center;
+    height: 50rem;
+}
+
+.location-container {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100%;
+    max-width: 100%;
+    justify-content: center;
+}
+
+.location-container h2 {
+    padding-bottom: 1rem;
+}
+
+.location-image {
+    display: flex;
+    height: 65%;
+}
+
+.location-image img {
+    width: 100%;
+    margin: 20px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+@media only screen and (min-width: 891px) and (max-width: 1246px) {
+
+    #locations {
+        padding-bottom: 0px;
+    }
+
+    .location-image {
+        height: 45%;
+    }
+
+}
+
+@media only screen and (max-width: 1085px) {
+
+    #location {
+        height: 130rem;
+    }
+
+    .location-base {
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-columns: none;
+        gap: 90px;
+    }
+
+    .location-container {
+        height: 35rem;
+    }
+
+    .location-container h2 {
+        padding-bottom: 0px;
+    }
+
+    .location-info {
+        padding-top: 2rem;
+    }
+
+    .location-info ul{
+        column-count: 2;
+        column-gap: 3rem;
+    }
+
+}
+
+/*Employees*/
+
+#employees {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 5rem;
+    background-color: hsla(195, 64%, 47%, .2);
+    padding-bottom: 5rem;
+}
+
+.employees-base {
+    display: flex;
+    gap: 70px;
+    justify-content: space-evenly;
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 5rem;
+    flex-wrap: wrap;
+} 
+
+.employee-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 4px hsla(195, 64%, 47%, .3);
+}
+
+.employee-container:hover {
+    transform: scale(1.1);
+}
+
+.employee-container h2 {
+    padding: .5rem;
+}
+
+.employee-container p {
+    margin: 0;
+    padding: 1rem;
+}
+
+.employee-image {
+    display: flex;
+    width: 100%;
+    height: auto;
+    
+}
+
+.employee-image img {
+    width: 100%;
+    margin: 50px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 4px rgba(94, 94, 94, 0.5);
+}
+
+
+
+/*Testimonials*/
+
+#testimonials {
+    padding-bottom: 10rem;
+    padding-top: 5rem;
+}
+
+#testimonials h2{
+    padding-bottom: 5rem;
+}
+
+.testimonials-base{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.testimonials-base h2 {
+    padding-bottom: 0px !important;
+}
+
+.testimonials-base p {
+    font-family: "Alegreya Sans";
+    font-size: 1.5rem;
+    word-wrap: normal;
+    width: 30rem;
+}
+
+@media only screen and (max-width: 890px) {
+
+    #testimonials {
+        padding-bottom: 4rem;
+    }
+
+    .testimonial-two {
+        Margin-top: 4rem;
+    }
+}
+
+/*footer*/
+
+footer {
+    background-color: hsla(22, 77%, 56%, 0.75);
+    height: 100%;
+}
+
+footer h2 {
+    padding: 1rem;
+}
+
+footer h5 {
+    font-weight: 300;
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
